@@ -2,13 +2,28 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/hola">Hola Mundo</router-link> |
+    <router-link :to="`/hola/${idEstudiante}`">Hola Mundo</router-link> |
     <router-link to="/preguntas">Preguntas</router-link> |
     <router-link to="/pokemon">Pokémon</router-link>
 
   </nav>
+    <div>
+    <input type="text" v-model="idEstudiante">
+  </div>
   <router-view/>
 </template>
+
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {
+      idEstudiante: null,
+    }
+  },
+
+};
+</script>
 
 <style>
 #app {
