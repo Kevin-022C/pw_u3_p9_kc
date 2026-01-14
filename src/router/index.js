@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import HolaMundo from '../views/HolaMundo.vue'
 import PreguntaView from '@/views/PreguntaView.vue'
+import PokemonView from '@/views/PokemonView.vue'
 
 const routes = [
   {
@@ -26,6 +27,11 @@ const routes = [
     path:'/preguntas',
     name:'preguntas',
     component: PreguntaView
+  },
+  {
+    path:'/pokemon',
+    name:'pokemon',
+    component: PokemonView
   }
 ]
 
