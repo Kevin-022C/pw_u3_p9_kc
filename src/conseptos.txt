@@ -1,0 +1,47 @@
+Que es una Api
+una api es un contrato de especificaciones(definiciones,protocolos)
+se define para que dos o mas componentes tecnológicos se comuniquen entre si,
+una api encapsula toda su lógica que implementa para cumplir con estos contratos
+Api estilo arquitectónico:
+RESTful-> implentan el estilo arquitectónico REST -> formato principal (json)
+SOAP-> basadas en XML(esquemas muy rigidos) es muy complicado cambiar el formato el cliente debe tener un esquema muy rígido
+GRPC-> tipo de api de comunicación basado en http (2) versión mas avanzada (se dice que es mas eficiente para comunicaciones internas)
+ASINCRONAS-> apis que se manejan con mensajería o colas no es un api web (es un api que se basa en mensajeria donde necesito un
+desacoplamiento esos componentes ósea que no hay dependencia en la tecnologia
+GRApHQL->lenguaje d consultas para apis (el cliente define lo que nesecita)
+
+Este curso se sentraran en apis restful
+Representation state transfer:
+este estilo arquitectónico exige que se cumpla los siguientes principios
+1) Recurso->todo objeto(tabla) con el que yo trabajo es un recurso
+
+2) Cliente Servidor -> 
+
+3) sin estado -> a la api se le va hacer la pregunta y no guarda el estado para hacer otra pregunta
+
+uso correcto de http -> los verbvos y los métodos http
+para hacer consultas GET
+para agregar un recurso POST
+cuando se quiero actualizar un recurso se utilza el vervo PUT
+cuando se quiere actualizar parcialmente PATCH
+cuando quiero eliminar es el DELETE
+
+4) representaciones -> cuando yo voy a crear un recurso tengo que enviar el obj estudiante
+no se trabaja con los obj reales sino con una representación del obj 
+
+5) código de estado -> los códigos de estado 200 o 400
+6) cacheable -> exist en siertos esenarios como guardar una información importante para no 
+saturar el servidor
+7) por capas : MODELO,VISTA,CONTROLADOR
+VAMOS A APLICAR RESTful que cumple 
+
+Microprofile
+conjunto de especificaciones para la construcciones de apis web basadas en java y orientada para microservicios
+utilizando java esto es una especificación
+especificaciones
+Quarkus: como implimentacion de microprofile
+tiene la característica por compilación nativa (optimiza la compilación) es decir se le púede decir 
+en donde compilar en Windows o Linux es rápido en ejecución es decir en rendimiento en repuesta y en consumo de recursos
+consume menos cpu y menos memoria
+
+
